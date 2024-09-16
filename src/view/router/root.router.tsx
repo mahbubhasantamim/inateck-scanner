@@ -41,11 +41,11 @@ export default function RootRouter() {
                         <Route
                             path={RouteUrl.HOME}
                             element={
-                                // <ProtectedRoute>
-                                <PageWrapper className="px-6">
-                                    <HomePage />
-                                </PageWrapper>
-                                // </ProtectedRoute>
+                                <ProtectedRoute>
+                                    <PageWrapper className="px-6">
+                                        <HomePage />
+                                    </PageWrapper>
+                                </ProtectedRoute>
                             }
                         />
                         <Route

@@ -53,7 +53,7 @@ export const DashboardPage = () => {
     return (
         <PageWrapper hideFooter>
             <div className="text-center py-4">Dashboard</div>
-            <p>{data}</p>
+            <p>Barcode: {data}</p>
         </PageWrapper>
     )
 }
