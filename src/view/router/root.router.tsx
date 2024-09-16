@@ -10,7 +10,6 @@ import { PageWrapper, SidebarWrapper } from "@milon27/react-sidebar"
 import { ClientsPage } from "../page/clients/clients.page"
 import { DashboardPage } from "../page/dashboard/dashboard.page"
 import RegisterPage from "../page/register/register.page"
-import ProtectedRoute from "./protected.route"
 import PublicRoute from "./public.route"
 import { useSidebarController } from "./sidebar/sidebar-items"
 import { RouteUrl } from "./url"
@@ -41,11 +40,11 @@ export default function RootRouter() {
                         <Route
                             path={RouteUrl.HOME}
                             element={
-                                <ProtectedRoute>
-                                    <PageWrapper className="px-6">
-                                        <HomePage />
-                                    </PageWrapper>
-                                </ProtectedRoute>
+                                // <ProtectedRoute>
+                                <PageWrapper className="px-6">
+                                    <HomePage />
+                                </PageWrapper>
+                                // </ProtectedRoute>
                             }
                         />
                         <Route
@@ -68,11 +67,11 @@ export default function RootRouter() {
                         <Route
                             path={RouteUrl.DASHBOARD}
                             element={
-                                <ProtectedRoute>
-                                    <PageWrapper className="px-0">
-                                        <DashboardPage />
-                                    </PageWrapper>
-                                </ProtectedRoute>
+                                // <ProtectedRoute>
+                                <PageWrapper className="px-0">
+                                    <DashboardPage />
+                                </PageWrapper>
+                                // </ProtectedRoute>
                             }
                         />
                         <Route
