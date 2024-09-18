@@ -16,7 +16,9 @@ export const DashboardPage = () => {
             const sanitized = newBarcode.slice(1, -2)
 
             // Update the barcode state and sanitizedBarcode state together
-            setSanitizedBarcode(sanitized)
+            if (sanitized.length > 5) {
+                setSanitizedBarcode(sanitized)
+            }
 
             // Stop scanning after a short delay (end of barcode scan)
             const timeout = setTimeout(() => {
@@ -35,7 +37,9 @@ export const DashboardPage = () => {
     }, [scanning])
 
     const handleBarcodeScan = (sanitizedBarcode: string) => {
-        console.log("Scanned Barcode:", sanitizedBarcode)
+        if (sanitizedBarcode.length > 5) {
+            console.log("Scanned Barcode:", sanitizedBarcode)
+        }
     }
 
     handleBarcodeScan(sanitizedBarcode)
