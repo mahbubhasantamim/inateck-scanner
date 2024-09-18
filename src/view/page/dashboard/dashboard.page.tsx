@@ -8,13 +8,13 @@ export const DashboardPage = () => {
     const [scanning, setScanning] = useState<boolean>(false)
 
     useEffect(() => {
-        const handleKeyPress = (event: KeyboardEvent) => {
+        const handleKeyPress = () => {
             if (!scanning) {
                 setScanning(true)
                 setBarcode("") // Reset barcode for a new scan
             }
 
-            setBarcode((prevBarcode) => prevBarcode + event.key)
+            setBarcode((prevBarcode) => prevBarcode)
 
             // Stop scanning after a short delay (indicating the end of the barcode scan)
             const timeout = setTimeout(() => {
