@@ -17,6 +17,9 @@ dependencies:
   '@tanstack/react-query':
     specifier: 4.33.0
     version: 4.33.0(react-dom@18.2.0)(react@18.2.0)
+  '@use-symbology-scanner/react':
+    specifier: ^1.1.0
+    version: 1.1.0(react@18.2.0)
   axios:
     specifier: 1.5.0
     version: 1.5.0
@@ -65,6 +68,9 @@ dependencies:
   tailwindcss-animate:
     specifier: ^1.0.7
     version: 1.0.7(tailwindcss@3.3.3)
+  use-scan-detection:
+    specifier: ^0.2.3
+    version: 0.2.3(react@18.2.0)
   zod:
     specifier: 3.22.2
     version: 3.22.2
@@ -936,6 +942,19 @@ packages:
       '@typescript-eslint/types': 6.0.0
       eslint-visitor-keys: 3.4.3
     dev: true
+
+  /@use-symbology-scanner/core@1.1.0:
+    resolution: {integrity: sha512-+dzIDZ1j9cm46q3Hce46nE+h19gVfRpGZWNrbeIUq0JHoM63soA1N9Pky+aIiElCRXZh13LW939TFgzqc8LbuA==}
+    dev: false
+
+  /@use-symbology-scanner/react@1.1.0(react@18.2.0):
+    resolution: {integrity: sha512-jHxPrFPCvce1/5EPjZ3XmUUguzyAhxXWDtW79PpaBZrL7vPd+ksbmINFwxZMB6/9d3zqjbMZZocEIj93tAvhDg==}
+    peerDependencies:
+      react: '>= 16.8.0'
+    dependencies:
+      '@use-symbology-scanner/core': 1.1.0
+      react: 18.2.0
+    dev: false
 
   /@vitejs/plugin-react@4.0.3(vite@4.4.5):
     resolution: {integrity: sha512-pwXDog5nwwvSIzwrvYYmA2Ljcd/ZNlcsSG2Q9CNDBwnsd55UGAyr2doXtB5j+2uymRCnCfExlznzzSFbBRcoCg==}
@@ -3037,6 +3056,15 @@ packages:
     dependencies:
       punycode: 2.3.0
     dev: true
+
+  /use-scan-detection@0.2.3(react@18.2.0):
+    resolution: {integrity: sha512-GbtTTovqPkoTCJeoFNcazTIgELZYobNS7bmBV1cuMVsIcpZ3QYMQ/YNgyShtMxrJUqbNctWjMrKxW0hWeDKUEA==}
+    deprecated: Package no longer supported. Opt for @use-symbology-scanner/react instead.
+    peerDependencies:
+      react: ^16.11.0
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /use-sync-external-store@1.2.0(react@18.2.0):
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
