@@ -3,11 +3,11 @@ import { useState } from "react"
 import useScanDetection from "use-scan-detection"
 
 export const DashboardPage = () => {
-    const [barcode, setBarcode] = useState("")
+    const [barcode, setBarcode] = useState<String>("")
 
     useScanDetection({
-        onComplete: (code) => {
-            setBarcode(code as string)
+        onComplete: (code: String) => {
+            setBarcode(code)
         },
         minLength: 3,
     })
