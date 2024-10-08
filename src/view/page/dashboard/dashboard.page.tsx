@@ -1,53 +1,34 @@
+import MyButton from "@/view/components/common/form/my-button"
 import PageWrapper from "@/view/components/layout/page-wrapper"
-import { useEffect, useState } from "react"
+import { QRCodeSVG } from "qrcode.react"
+import { useRef } from "react"
+import { useReactToPrint } from "react-to-print"
 
 export const DashboardPage = () => {
-    const [sanitizedBarcode, setSanitizedBarcode] = useState<string>("")
-    const [scanning, setScanning] = useState<boolean>(false)
-
-    useEffect(() => {
-        const handleKeyPress = (event: KeyboardEvent) => {
-            if (!scanning) {
-                setScanning(true)
+    const contentRef = useRef<HTMLDivElement>(null)
+    const reactToPrintFn = useReactToPrint({
+        contentRef: contentRef,
+        pageStyle: `@media print {
+            @page {
+                margin: 30px;
             }
-            const newBarcode = event.key
-
-            // Sanitize the new barcode directly before setting the state
-            const sanitized = newBarcode.slice(1, -2)
-
-            // Update the barcode state and sanitizedBarcode state together
-            if (sanitized.length > 5) {
-                setSanitizedBarcode(sanitized)
-            }
-
-            // Stop scanning after a short delay (end of barcode scan)
-            const timeout = setTimeout(() => {
-                setScanning(false)
-            }, 100) // Adjust delay based on your scanner's speed
-
-            return () => clearTimeout(timeout)
-        }
-
-        window.addEventListener("keydown", handleKeyPress)
-
-        // Cleanup event listener on component unmount
-        return () => {
-            window.removeEventListener("keydown", handleKeyPress)
-        }
-    }, [scanning])
-
-    const handleBarcodeScan = (sanitizedBarcode: string) => {
-        if (sanitizedBarcode.length > 5) {
-            console.log("Scanned Barcode:", sanitizedBarcode)
-        }
-    }
-
-    handleBarcodeScan(sanitizedBarcode)
+          }`,
+    })
 
     return (
         <PageWrapper hideFooter>
-            <div className="text-center py-4">Dashboard</div>
-            <p>Barcode: {sanitizedBarcode}</p>
+            <div className="py-4 px-6">
+                <h2 className="text-center">Dashboard</h2>
+
+                <p className="py-3">QR Code: </p>
+
+                <div ref={contentRef}>
+                    <QRCodeSVG value="test qr" />
+                </div>
+                <div className="my-4">
+                    <MyButton onClick={() => reactToPrintFn()}>Print</MyButton>
+                </div>
+            </div>
         </PageWrapper>
     )
 }
