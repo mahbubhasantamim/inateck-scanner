@@ -32,9 +32,6 @@ importers:
       date-fns:
         specifier: 2.30.0
         version: 2.30.0
-      inateck-scanner-js-sdk:
-        specifier: ^0.0.3
-        version: 0.0.3(@capacitor/core@5.7.8)
       lucide-react:
         specifier: ^0.344.0
         version: 0.344.0(react@18.2.0)
@@ -59,9 +56,6 @@ importers:
       react-router-dom:
         specifier: 6.15.0
         version: 6.15.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      react-thermal-printer:
-        specifier: ^0.18.1
-        version: 0.18.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react-to-print:
         specifier: ^3.0.1
         version: 3.0.1(react@18.2.0)
@@ -263,14 +257,6 @@ packages:
   '@babel/types@7.22.11':
     resolution: {integrity: sha512-siazHiGuZRz9aB9NpHy9GOs9xiQPKnMzgdr493iI1M67vRXpnEq8ZOOKzezC5q7zwuQ6sDhdSp4SD9ixKSqKZg==}
     engines: {node: '>=6.9.0'}
-
-  '@capacitor-community/bluetooth-le@3.1.4':
-    resolution: {integrity: sha512-jPgG0l9yLBp0FvWDWLNtBCl1ZuGFSCvL8kAasHNgi5CsutgXm7uelpQQNjpF4QY/RRRSPZ4g3aJY1ozBdtH9eQ==}
-    peerDependencies:
-      '@capacitor/core': ^5.0.0
-
-  '@capacitor/core@5.7.8':
-    resolution: {integrity: sha512-rrZcm/2vJM0WdWRQup1TUidbjQV9PfIadSkV4rAGLD7R6PuzZSMPGT0gmoZzCRlXkqrazrWWDkurei3ozU02FA==}
 
   '@esbuild/android-arm64@0.18.20':
     resolution: {integrity: sha512-Nz4rJcchGDtENV0eMKUNa6L12zz2zBDXuhj/Vjh18zGqB44Bi7MBMSXjgunJgjRhCmKOjnPuZp4Mb6OKqtMHLQ==}
@@ -493,12 +479,6 @@ packages:
       '@types/react':
         optional: true
 
-  '@react-thermal-printer/image@0.11.1':
-    resolution: {integrity: sha512-ocGGjZdb2n4CWfrbGPlhus45bwh2Tu8Oc1Juiyq775kZ+ux1QRzvADEX4/aMUMYOXmZs2MK0ckWOa8LqcxmtCQ==}
-
-  '@react-thermal-printer/printer@0.15.0':
-    resolution: {integrity: sha512-WJxEmu8XfUGdBtZLwaS+lWTP37cZP6V+LVW5L39TOqr6OewTPBDlKpPVlyMbL48uGJFmf2Ztil25ytQ+lvAgzA==}
-
   '@remix-run/router@1.8.0':
     resolution: {integrity: sha512-mrfKqIHnSZRyIzBcanNJmVQELTnX+qagEDlcKO90RgRBVOZGSGvZKeDihTRfWcqoDn5N/NkUcwWTccnpN18Tfg==}
     engines: {node: '>=14.0.0'}
@@ -538,9 +518,6 @@ packages:
 
   '@types/semver@7.5.1':
     resolution: {integrity: sha512-cJRQXpObxfNKkFAZbJl2yjWtJCqELQIdShsogr1d2MilP8dKD9TE/nEKHkJgUNHdGKCQaf9HbIynuV2csLGVLg==}
-
-  '@types/web-bluetooth@0.0.16':
-    resolution: {integrity: sha512-oh8q2Zc32S6gd/j50GowEjKLoOVOwHP/bWVjKJInBwQqdOYMdPrf1oVlelTlyfFK3CKxL1uahMDAr+vy8T7yMQ==}
 
   '@typescript-eslint/eslint-plugin@6.0.0':
     resolution: {integrity: sha512-xuv6ghKGoiq856Bww/yVYnXGsKa588kY3M0XK7uUW/3fJNNULKRfZfSBkMTSpqGG/8ZCXCadfh8G/z/B4aqS/A==}
@@ -737,9 +714,6 @@ packages:
 
   class-variance-authority@0.7.0:
     resolution: {integrity: sha512-jFI8IQw4hczaL4ALINxqLEXQbWcNjoSkloa4IaufXCJr6QawJyw7tuRysRsrE8w2p/4gGaxKIt/hX3qz/IbD1A==}
-
-  classnames@2.5.1:
-    resolution: {integrity: sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==}
 
   clsx@1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
@@ -985,9 +959,6 @@ packages:
   flatted@3.2.7:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
 
-  floyd-steinberg@1.0.6:
-    resolution: {integrity: sha512-gzlre+taSQzEY+nCusbHJFQ3zHXBkRAX4fe3szssPY/N/t1ClBX9hnHZM4o8ZvpdqLLUPEavuZ/Noj71ZaA8+A==}
-
   follow-redirects@1.15.2:
     resolution: {integrity: sha512-VQLG33o04KaQ8uYi2tVNbdrWp1QWxNNea+nmIB4EVM28v0hmP17z7aG1+wAkNzVq4KeXTq3221ye5qTJP91JwA==}
     engines: {node: '>=4.0'}
@@ -1105,10 +1076,6 @@ packages:
     resolution: {integrity: sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==}
     engines: {node: '>= 0.4.0'}
 
-  iconv-lite@0.6.3:
-    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
-    engines: {node: '>=0.10.0'}
-
   ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
@@ -1120,11 +1087,6 @@ packages:
   imurmurhash@0.1.4:
     resolution: {integrity: sha512-JmXMZ6wuvDmLiHEml9ykzqO6lwFbof0GG4IkcGaENdCRDDmMVnny7s5HsIgHCbaq0w2MyPhDqkhTUgS2LU2PHA==}
     engines: {node: '>=0.8.19'}
-
-  inateck-scanner-js-sdk@0.0.3:
-    resolution: {integrity: sha512-Qaz1Gsk42czB1q9XZ9f+5ltivmN5qYOT7p8yHu2nOdmtAkhJFW8jBcMkppQfYr+tC3rWtx4FpUAYkXHS8Sa35Q==}
-    peerDependencies:
-      '@capacitor/core': ^5.0.0
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
@@ -1562,12 +1524,6 @@ packages:
     peerDependencies:
       react: '>=16.8'
 
-  react-thermal-printer@0.18.1:
-    resolution: {integrity: sha512-5ibDqPYtQhlPRVhv+aNjO2RCjxwfGG30BkH95pEUnzq62RrfZkM2hMfbelnS+PbxA6IotaaZqwsqWD0mx++mtQ==}
-    peerDependencies:
-      react: '*'
-      react-dom: '*'
-
   react-to-print@3.0.1:
     resolution: {integrity: sha512-WcGiim2VWiHW7TR0PB9Xqv/SOOtnDJbjhlSOeMB1N+lxyFLuoQ8GIoNAw/ci7+sCkbXreEKmiy1ZWgd87v7U2Q==}
     peerDependencies:
@@ -1635,9 +1591,6 @@ packages:
 
   safe-regex-test@1.0.0:
     resolution: {integrity: sha512-JBUUzyOgEwXQY1NuPtvcj/qcBDbDmEvWufhlnXZIm75DEHp+afM1r1ujJpJsV/gSM4t59tpDyPi1sd6ZaPFfsA==}
-
-  safer-buffer@2.1.2:
-    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
   scheduler@0.23.0:
     resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
@@ -1750,9 +1703,6 @@ packages:
 
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
-
-  tslib@2.7.0:
-    resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
 
   type-check@0.4.0:
     resolution: {integrity: sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew==}
@@ -2043,15 +1993,6 @@ snapshots:
       '@babel/helper-validator-identifier': 7.22.5
       to-fast-properties: 2.0.0
 
-  '@capacitor-community/bluetooth-le@3.1.4(@capacitor/core@5.7.8)':
-    dependencies:
-      '@capacitor/core': 5.7.8
-      '@types/web-bluetooth': 0.0.16
-
-  '@capacitor/core@5.7.8':
-    dependencies:
-      tslib: 2.7.0
-
   '@esbuild/android-arm64@0.18.20':
     optional: true
 
@@ -2207,15 +2148,6 @@ snapshots:
     optionalDependencies:
       '@types/react': 18.2.15
 
-  '@react-thermal-printer/image@0.11.1':
-    dependencies:
-      floyd-steinberg: 1.0.6
-
-  '@react-thermal-printer/printer@0.15.0':
-    dependencies:
-      '@react-thermal-printer/image': 0.11.1
-      iconv-lite: 0.6.3
-
   '@remix-run/router@1.8.0': {}
 
   '@tanstack/query-core@4.33.0': {}
@@ -2249,8 +2181,6 @@ snapshots:
   '@types/scheduler@0.16.3': {}
 
   '@types/semver@7.5.1': {}
-
-  '@types/web-bluetooth@0.0.16': {}
 
   '@typescript-eslint/eslint-plugin@6.0.0(@typescript-eslint/parser@6.0.0(eslint@8.45.0)(typescript@5.0.2))(eslint@8.45.0)(typescript@5.0.2)':
     dependencies:
@@ -2513,8 +2443,6 @@ snapshots:
   class-variance-authority@0.7.0:
     dependencies:
       clsx: 2.0.0
-
-  classnames@2.5.1: {}
 
   clsx@1.2.1: {}
 
@@ -2850,8 +2778,6 @@ snapshots:
 
   flatted@3.2.7: {}
 
-  floyd-steinberg@1.0.6: {}
-
   follow-redirects@1.15.2: {}
 
   for-each@0.3.3:
@@ -2971,10 +2897,6 @@ snapshots:
     dependencies:
       function-bind: 1.1.1
 
-  iconv-lite@0.6.3:
-    dependencies:
-      safer-buffer: 2.1.2
-
   ignore@5.2.4: {}
 
   import-fresh@3.3.0:
@@ -2983,11 +2905,6 @@ snapshots:
       resolve-from: 4.0.0
 
   imurmurhash@0.1.4: {}
-
-  inateck-scanner-js-sdk@0.0.3(@capacitor/core@5.7.8):
-    dependencies:
-      '@capacitor-community/bluetooth-le': 3.1.4(@capacitor/core@5.7.8)
-      '@capacitor/core': 5.7.8
 
   inflight@1.0.6:
     dependencies:
@@ -3384,14 +3301,6 @@ snapshots:
       '@remix-run/router': 1.8.0
       react: 18.2.0
 
-  react-thermal-printer@0.18.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
-    dependencies:
-      '@react-thermal-printer/image': 0.11.1
-      '@react-thermal-printer/printer': 0.15.0
-      classnames: 2.5.1
-      react: 18.2.0
-      react-dom: 18.2.0(react@18.2.0)
-
   react-to-print@3.0.1(react@18.2.0):
     dependencies:
       react: 18.2.0
@@ -3471,8 +3380,6 @@ snapshots:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
       is-regex: 1.1.4
-
-  safer-buffer@2.1.2: {}
 
   scheduler@0.23.0:
     dependencies:
@@ -3613,8 +3520,6 @@ snapshots:
       typescript: 5.0.2
 
   ts-interface-checker@0.1.13: {}
-
-  tslib@2.7.0: {}
 
   type-check@0.4.0:
     dependencies:
